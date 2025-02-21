@@ -36,6 +36,23 @@ int main (){
             cout << "4th " << *(arr+3) << endl;
             cout << "5th " << *(arr+4) << endl;
             cout << "6th " << *(arr+5) << endl;
+             // Difference between array and pointer
+        // size difference between array and pointer
+        int temp[10];
+        cout << "size of temp " << sizeof(temp) << endl;
+        
+        int *ptr = &temp[0];
+        cout << "size of ptr " << sizeof(ptr) << endl;*/
+        // address difference between array and pointer
+        int a[20]={1,2,3,4,5,6,7,8,9,10};
+        cout << "address of a " << &a[0] << endl;
+        cout << "address of a " << a << endl;
+        cout << "address of a " << &a << endl;
+        int *p1 = &a[0];
+        cout << "address of p1 " << p1 << endl;
+        cout << "address of p1 " << &p1 << endl;
+        cout << "address of p1 " << p1+1 << endl;
+
      
         return 0;
 }
