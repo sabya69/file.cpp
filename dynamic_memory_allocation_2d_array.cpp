@@ -23,6 +23,8 @@ int main(){
         for(int j=0; j<n; j++){
             cout << arr[i][j] << " ";
         }
+        // used to remove data from heap memory 
+        delete [] arr[i];
         cout << endl;
     }
 }
